@@ -1,0 +1,30 @@
+
+version: '3'
+
+services:
+  db:
+    build: ./postgresql
+    container_name: db
+    expose:
+      - "5432"
+    ports:
+      - "5432:5432"
+  check:
+    build: ./check_thread
+    container_name: check
+    volumes:
+      - "./check_thread/thread:/thread"
+    depends_on:
+      - db
+  web:
+    build: ./python
+    container_name: web
+    volumes:
+      - "./python/app:/app"
+    expose:
+      - "5000"
+    ports:
+      - "8080:5000"
+    depends_on:
+      - db
+      - check
