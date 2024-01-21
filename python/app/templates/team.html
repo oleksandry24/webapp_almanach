@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Almanach</title>
+    <link rel="stylesheet" href="/src/main/resources/static/style.css"/>
+    <link rel="canonical" href="https://player.vimeo.com/video/696566291">
+    
+    <meta http-equiv="refresh" content="30">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <style>
+
+        body {
+            display: flex;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: "Century Gothic", 'Lato', sans-serif;
+            overflow-x: hidden;
+            background-color: rgb(85, 81, 55);
+        }
+
+        .background-container {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .left-image {
+            position: absolute;
+            top: 0;
+            right: -50rem;
+            width: 120rem;
+            height: 100%;
+            background-image: url(../static/images/);
+            background-size: cover;
+            background-position: center;
+            opacity: 0.7;
+            transform: scaleX();
+        }
+
+        .text-container {
+            text-align: center;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        h1 {
+            color:goldenrod;
+            font-size: 12rem;
+            margin: 0;
+            letter-spacing: 1rem;
+            font-family: "Old English Text MT", serif;
+            text-shadow: 15px 15px 15px rgba(0, 0, 0, 5);
+        }
+
+        @import url(https://fonts.googleapis.com/css2?family=Merriweather:wght@450&family=UnifrakturMaguntia&display=swap);
+
+    </style>
+</head>
+<body>
+    <div class="background-container">
+        <div class="background-container left-image"></div>
+    </div>
+
+    <input type="checkbox" id="burger-toggle">
+    <label for="burger-toggle" class="burger-menu">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </label>
+    <div class="menu">
+      <div class="menu-inner">
+        <ul class="menu-nav">
+          <li class="menu-nav-item"><a class="menu-nav-link" href="#"><span>
+                <div>Home</div>
+              </span></a></li>
+          <li class="menu-nav-item"><a class="menu-nav-link" href="#"><span>
+                <div>About</div>
+              </span></a></li>
+          <li class="menu-nav-item"><a class="menu-nav-link" href="#"><span>
+                <div>Service</div>
+              </span></a></li>
+          <li class="menu-nav-item"><a class="menu-nav-link" href="#"><span>
+                <div>Team</div>
+              </span></a></li>
+        </ul>
+        <div class="gallery">
+          <div class="title">
+            <p style="color:white">Gallery</p>
+          </div>
+          <div class="images">
+            <a class="image-link" href="#">
+              <div class="image" data-label="Medieval"><img src="https://www.coimbra.pt/wp-content/uploads/2023/07/DSC_7353-Custom-scaled_1920x1080_acf_cropped-1095x616.jpg" alt=""></div>
+            </a>
+            <a class="image-link" href="#">
+              <div class="image" data-label="Romana"><img src="https://apuliapraia-hotel.com/wp-content/uploads/sites/512/2023/06/Galaicofolia-20191.jpg" alt=""></div>
+            </a>
+            <a class="image-link" href="#">
+              <div class="image" data-label="Pirata"><img src="https://www.sulinformacao.pt/wp-content/uploads/2017/07/Piratas-Viv-Arte.png" alt=""></div>
+            </a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+</body>
+</html>

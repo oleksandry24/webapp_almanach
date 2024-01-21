@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Almanach</title>
+    <link rel="stylesheet" href="../static/photo.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <header class="header">
+        <input type="checkbox" id="burger-toggle">
+        <label for="burger-toggle" class="burger-menu">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </label>
+        <div class="menu">
+          <div class="menu-inner">
+            <ul class="menu-nav">
+              <li class="menu-nav-item"><a class="menu-nav-link" href="./home.html"><span>
+                    <div>Home</div>
+                  </span></a></li>
+              <li class="menu-nav-item"><a class="menu-nav-link" href="./about.html"><span>
+                    <div>About</div>
+                  </span></a></li>
+              <li class="menu-nav-item"><a class="menu-nav-link" href="#"><span>
+                    <div>Service</div>
+                  </span></a></li>
+              <li class="menu-nav-item"><a class="menu-nav-link" href="#"><span>
+                    <div>Team</div>
+                  </span></a></li>
+            </ul>
+            <div class="gallery">
+              <div class="title">
+                <a class="gallery-link" href="./gallery.html">Gallery</a>
+              </div>
+              <div class="images">
+                <a class="image-link" href="./med.html">
+                  <div class="image" data-label="Medieval"><img src="https://www.coimbra.pt/wp-content/uploads/2023/07/DSC_7353-Custom-scaled_1920x1080_acf_cropped-1095x616.jpg" alt=""></div>
+                </a>
+                <a class="image-link" href="./rom.html">
+                  <div class="image" data-label="Romana"><img src="https://apuliapraia-hotel.com/wp-content/uploads/sites/512/2023/06/Galaicofolia-20191.jpg" alt=""></div>
+                </a>
+                <a class="image-link" href="./pir.html">
+                  <div class="image" data-label="Pirata"><img src="https://www.sulinformacao.pt/wp-content/uploads/2017/07/Piratas-Viv-Arte.png" alt=""></div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <div class="logo-container">
+          <a href="#" class="logo">
+            <h1>Almanach</h1>
+          </a>
+        </div>
+    </header>
+
+    <div class="h3-container">
+        <h1 class="h3-gallery">Gallery</h1>
+    </div>
+
+    <div class="page-content">
+        <div class="card">
+          <div class="content">
+            <h2 class="title">Romana</h2>
+            <a class="btn" href="./rom.html">View More</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="content">
+            <h2 class="title">Medieval</h2>
+            <a class="btn" href="./med.html">View More</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="content">
+            <h2 class="title">Pirata</h2>
+            <a class="btn" href="./pir.html">View More</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="content">
+            <h2 class="title">Entre outros</h2>
+            <a class="btn">View More</a>
+          </div>
+        </div>
+    </div>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+        const burgerToggle = document.getElementById('burger-toggle');
+        const gallery = document.querySelector('.page-content');
+        const h3 = document.querySelector('.h3-container');
+
+        burgerToggle.addEventListener('change', () => {
+            if (burgerToggle.checked) {
+            gallery.classList.add('gallery-hidden');
+            h3.classList.add('gallery-hidden');
+            } else {
+            gallery.classList.remove('gallery-hidden');
+            h3.classList.remove('gallery-hidden');
+            }
+        });
+        });
+    </script>
+
+</body>
+</html>

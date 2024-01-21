@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Almanach</title>
+    <link href="../static/style.css" rel="stylesheet"/>
+    <link href="../static/media.css" rel="stylesheet"/>
+    <link rel="canonical" href="https://player.vimeo.com/video/696566291">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=MedievalSharp' rel='stylesheet'>
+
+
+    <style>
+
+        body {
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            font-family: "Century Gothic", 'Lato', sans-serif;
+            overflow-x: hidden;
+        }
+
+        .background-container {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .left-image {
+            position: absolute;
+            top: 0;
+            left: 15rem;
+            width: 130rem;
+            height: 100%;
+            background-image: url();
+            background-size: cover;
+            background-position: center;
+            opacity: 0.7;
+            transform: scaleX(-1);
+        }
+
+        .text-container {
+            text-align: center;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        h1 {
+            color:goldenrod;
+            font-size: 12rem;
+            margin: 0;
+            letter-spacing: 1rem;
+            font-family: "Old English Text MT", serif;
+            text-shadow: 15px 15px 15px rgba(0, 0, 0, 5);
+        }
+
+        h3 {
+            font-size: 1rem;
+            letter-spacing: 0.3rem;
+            opacity: 0.7;
+        }
+        
+        @import url(https://fonts.googleapis.com/css2?family=Merriweather:wght@450&family=UnifrakturMaguntia&display=swap);
+
+        
+
+        .parchment-background {
+          z-index: -1;
+          width: inherit;
+          height: 75vh;
+          width: 70%;
+          margin: 5em 0rem;
+          position: absolute;
+          display: relative;
+          font-family: 'MedievalSharp';font-size: 22px;
+         }
+
+    </style>
+</head>
+<body>
+    <div class="parchment-background">
+      <div style="position: relative; top: 5%;">
+        <p style="font-size: 40px;">Almanach,</p>
+      </div>
+      <div style="position: relative; top: 10%;">
+        <p style="font-size: 20px;">Almanaque é uma publicação que originalmente tinha periodicidade anual e reunia um calendário com datas das principais efemérides astronómicas como os solstícios e as fases lunares. Atualmente os almanaques englobam outras informações com atualizações periódicas específicas a vários campos do conhecimento</p>
+        
+        <p style="font-size: 20px;">Segundo Correia e Guerreiro, o primeiro almanaque editado em Portugal data de 1496: Almanach Perpetuum de Abraão Zacuto, impresso em Leiria. Fornecia tábuas logarítmicas e outras indicações com respeito ao curso do sol para cada dia do ano. As informações eram para ser utilizadas em concordância com os instrumentos de medição astronómicos.[1]
+
+          No século XIX, sobretudo na sua segunda metade, os Almanaques impuseram-se em quantidade, com incontestável importância, se bem que completamente distanciados do avanço científico e técnico. De acordo com os seus públicos, podem ser um pequeno folheto, dirigido à população rural, e dos arredores das cidades, ou, então, aumentar o número de páginas, tornando-se num instrumento de divulgação de conhecimentos quer para um público geral, mais burguês e citadino, quer junto de algumas camadas sociais diferenciadas por ideários políticos, religiosos ou por outros interesses muito específicos.[1]
+          
+          Em Portugal surge, em 1899 , o Almanach Bertrand, muito popular no seu país e no Brasil, no início do século XX, sendo publicado até 1969. Em 1956 foi edidado o primeiro número do Almanaque Português de Fotografia. Atualmente, o Almanaque Borda d'Água é o mais vendido em Portugal, tendo surgido em 1929.[1] </p>
+      </div>
+
+      <div class="icons-container">
+        <ul class="social-icons">
+            <li><a href="https://www.instagram.com/almanach.crl"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="https://www.facebook.com/CRLAlmanach"><i class="fa fa-facebook"></i></a></li>
+        </ul>
+      </div>
+      <div class="imagem">
+        <img src="../static/images/Design_sem_nome-removebg-preview.png" alt="" style="width: 140%;">
+      </div>
+    </div>
+
+   
+
+    <input type="checkbox" id="burger-toggle">
+    <label for="burger-toggle" class="burger-menu">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </label>
+    <div class="menu">
+      <div class="menu-inner">
+        <ul class="menu-nav">
+          <li class="menu-nav-item"><a class="menu-nav-link" href="./home.html"><span>
+                <div>Home</div>
+              </span></a></li>
+          <li class="menu-nav-item"><a class="menu-nav-link" href="./about.html"><span>
+                <div>About</div>
+              </span></a></li>
+          <li class="menu-nav-item"><a class="menu-nav-link" href="#"><span>
+                <div>Service</div>
+              </span></a></li>
+          <li class="menu-nav-item"><a class="menu-nav-link" href="#"><span>
+                <div>Team</div>
+              </span></a></li>
+        </ul>
+        <div class="gallery">
+          <div class="title">
+            <a class="gallery-link" href="./gallery.html">Gallery</a>
+          </div>
+          <div class="images">
+            <a class="image-link" href="./med.html">
+              <div class="image" data-label="Medieval"><img src="https://www.coimbra.pt/wp-content/uploads/2023/07/DSC_7353-Custom-scaled_1920x1080_acf_cropped-1095x616.jpg" alt=""></div>
+            </a>
+            <a class="image-link" href="./rom.html">
+              <div class="image" data-label="Romana"><img src="https://apuliapraia-hotel.com/wp-content/uploads/sites/512/2023/06/Galaicofolia-20191.jpg" alt=""></div>
+            </a>
+            <a class="image-link" href="./pir.html">
+              <div class="image" data-label="Pirata"><img src="https://www.sulinformacao.pt/wp-content/uploads/2017/07/Piratas-Viv-Arte.png" alt=""></div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</body>
+</html>
